@@ -20,7 +20,7 @@ must_by_player = false
 #The value to be multiply to the damage.
 #Works BEFORE addition.
 #Range: 0.0 ~ 2.147483647E9
-value_multiplier = 10.0
+value_multiplier = 2.0
 #The value to be added to the damage.
 #Works AFTER multiplication.
 #Range: 0.0 ~ 2.147483647E9

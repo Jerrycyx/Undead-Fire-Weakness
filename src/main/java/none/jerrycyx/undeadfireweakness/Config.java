@@ -48,7 +48,7 @@ public final class Config {
 	private static final ForgeConfigSpec.DoubleValue VALUE_MULTIPLIER = BUILDER
 			.comment("The value to be multiply to the damage.")
 			.comment("Works BEFORE addition.")
-			.defineInRange("value_multiplier", 10.0, 0.0, Integer.MAX_VALUE);
+			.defineInRange("value_multiplier", 2.0, 0.0, Integer.MAX_VALUE);
 	
 	private static final ForgeConfigSpec.DoubleValue VALUE_ADDITION = BUILDER
 			.comment("The value to be added to the damage.")
