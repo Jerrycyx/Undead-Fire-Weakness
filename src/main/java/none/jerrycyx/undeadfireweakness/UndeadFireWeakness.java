@@ -22,9 +22,11 @@ public class UndeadFireWeakness {
 	}
 	
 	public static void OnEntityHurt(LivingHurtEvent event) {
-		if (Config.checkEntityType(event.getEntity()) && Config.checkDamageType(event.getSource().type())
-				&& (!Config.mustByPlayer || event.getSource().getEntity() instanceof Player)) {
-			event.setAmount((float) (event.getAmount() * Config.valueMultiplier + Config.valueAddition));
+		if (Config.modEnabled) {
+			if (Config.checkEntityType(event.getEntity()) && Config.checkDamageType(event.getSource().type())
+					&& (!Config.mustByPlayer || event.getSource().getEntity() instanceof Player)) {
+				event.setAmount((float) (event.getAmount() * Config.valueMultiplier + Config.valueAddition));
+			}
 		}
 	}
 }
